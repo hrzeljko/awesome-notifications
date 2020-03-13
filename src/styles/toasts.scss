@@ -1,9 +1,15 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap);
+}
+
 #awn-toast-container {
   position: fixed;
   z-index: $awn-container-z-index;
   bottom: $awn-container-padding;
   right: $awn-container-padding;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 
   &.awn-top-left,
   &.awn-top-right {
@@ -33,7 +39,7 @@
   &.awn-top-right,
   &.awn-bottom-right {
     .awn-toast {
-      left: 100%;
+      left: 0;
       animation-name: $awn-toast-right-show-animation;
 
       &.awn-hiding {
@@ -56,13 +62,14 @@
   font-size: $awn-toast-font-size;
   animation-timing-function: $awn-toast-animation-timing;
   animation-fill-mode: both;
+  box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.527);
 
   &-content {
     word-break: break-word;
   }
 
   &-label {
-    display: block;
+    display: none;
     text-transform: uppercase;
     color: $awn-primary-color;
     font-size: $awn-toast-title-font-size;
@@ -73,7 +80,7 @@
     right: $awn-toast-padding;
     top: $awn-progress-bar-height;
     bottom: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: flex-end;
 
@@ -84,13 +91,14 @@
   }
 
   &-wrapper {
-    padding: $awn-progress-bar-height + $awn-toast-padding 88px $awn-toast-padding $awn-toast-padding;
+    padding: $awn-progress-bar-height + $awn-toast-padding $awn-toast-padding + 10 $awn-toast-padding $awn-toast-padding + 10;
 
     border: $awn-border;
     border-radius: $awn-toast-border-radius;
   }
 
   &-progress-bar {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;

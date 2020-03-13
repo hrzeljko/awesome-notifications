@@ -24,16 +24,16 @@ $awn-warning-background: hsl(32, 100%, 90%) !default;
 $awn-warning-border-color: hsl(32, 100%, 75%) !default;
 
 // Notifications
-$awn-toast-width: 320px !default;
-$awn-toast-padding: 16px !default;
+$awn-toast-width: 300px !default;
+$awn-toast-padding: 13px !default;
 $awn-toast-margin: 16px !default;
-$awn-toast-border-width: 2px !default;
+$awn-toast-border-width: 0px !default;
 $awn-toast-border-style: solid !default;
 $awn-toast-border-color: $awn-primary-border-color !default;
-$awn-toast-border-radius: 6px !default;
+$awn-toast-border-radius: 26px !default;
 $awn-border: $awn-toast-border-width $awn-toast-border-style $awn-toast-border-color !default;
-$awn-progress-bar-height: 6px !default;
-$awn-toast-font-size: 14px !default;
+$awn-progress-bar-height: 0px !default;
+$awn-toast-font-size: 13px !default;
 $awn-toast-title-font-size: 18px !default;
 $awn-toast-icon-size: 44px !default;
 
@@ -57,6 +57,6 @@ $awn-popup-hide-animation: awn-fade-out;
 $awn-popup-animation-timing: ease-out;
 
 $awn-toast-left-show-animation: awn-slide-left;
-$awn-toast-right-show-animation: awn-slide-right;
+$awn-toast-right-show-animation: awn-fade-in;
 $awn-toast-hide-animation: awn-fade-out;
 $awn-toast-animation-timing: linear;
